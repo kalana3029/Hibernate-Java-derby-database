@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.emp.model.EmpTask" table="TASK">
+        <id column="taskID" name="taskID">
+            <generator class="increment"/>
+        </id>
+        <property column="description" name="description"/>
+        <property column="employee" name="employee"/>
+    </class>
+</hibernate-mapping>

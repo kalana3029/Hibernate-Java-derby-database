@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context path="/EmployeeMng">
+     <Resource name="jdbc/SampleDB" auth="Container"
+       type="javax.sql.DataSource" 
+       username="emp" password="123"
+       driverClassName="org.apache.derby.jdbc.ClientDriver"
+       url="jdbc:derby://localhost:1527/empDB" 
+       maxActive="8"    /> 
+</Context>

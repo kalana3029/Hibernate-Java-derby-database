@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.emp.model.EmpEmployee" table="EMPLOYEE">
+        <id column="employeeID" name="employeeID">
+            <generator class="increment"/>
+        </id>
+        <property column="name" name="name"/>
+        <property column="role" name="role"/>
+        <set cascade="all" name="tasks" table="TASK" lazy="false">
+            <key column="employee"/>
+            <one-to-many class="com.emp.model.EmpTask"/>
+        </set>
+    </class>
+</hibernate-mapping>

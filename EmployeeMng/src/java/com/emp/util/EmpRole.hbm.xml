@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.emp.model.EmpRole" table="ROLE">
+        <id column="roleid" name="roleid">
+            <generator class="increment"/>
+        </id>
+        <property column="title" name="title"/>
+    </class>
+</hibernate-mapping>
